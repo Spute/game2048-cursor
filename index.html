@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>2048</h1>
+            <div class="score-container">
+                <div class="score-box">
+                    <span class="score-label">分数</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-box">
+                    <span class="score-label">最高分</span>
+                    <span id="best-score">0</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="new-game">新游戏</button>
+                <button id="undo">撤销</button>
+            </div>
+        </header>
+
+        <div class="game-container">
+            <div class="grid-container">
+                <!-- 4x4 网格 -->
+                <div class="grid-row">
+                    <div class="grid-cell" data-row="0" data-col="0"></div>
+                    <div class="grid-cell" data-row="0" data-col="1"></div>
+                    <div class="grid-cell" data-row="0" data-col="2"></div>
+                    <div class="grid-cell" data-row="0" data-col="3"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell" data-row="1" data-col="0"></div>
+                    <div class="grid-cell" data-row="1" data-col="1"></div>
+                    <div class="grid-cell" data-row="1" data-col="2"></div>
+                    <div class="grid-cell" data-row="1" data-col="3"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell" data-row="2" data-col="0"></div>
+                    <div class="grid-cell" data-row="2" data-col="1"></div>
+                    <div class="grid-cell" data-row="2" data-col="2"></div>
+                    <div class="grid-cell" data-row="2" data-col="3"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell" data-row="3" data-col="0"></div>
+                    <div class="grid-cell" data-row="3" data-col="1"></div>
+                    <div class="grid-cell" data-row="3" data-col="2"></div>
+                    <div class="grid-cell" data-row="3" data-col="3"></div>
+                </div>
+            </div>
+            
+            <!-- 游戏结束提示 -->
+            <div class="game-message">
+                <p></p>
+                <div class="message-buttons">
+                    <button id="retry">重试</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
